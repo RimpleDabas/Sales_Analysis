@@ -1,10 +1,7 @@
 
 USE Sales;
 
---SELECT * FROM dbo.Sales_cleaned;
-
-
--- Common shipping mode 
+--- Common shipping mode 
 
 SELECT Ship_Mode, COUNT(*) AS total_orders
 FROM   Sales_cleaned
@@ -94,3 +91,54 @@ FROM
     segment_wise
 WHERE
    State_status = 1;
+-- Favorite month
+SELECT DATENAME(MONTH,Order_Date) AS Month_NAME, COUNT(DISTINCT order_ID) AS total_orders
+FROM Sales_cleaned
+GROUP BY DATENAME(MONTH,Order_Date)
+ORDER BY total_orders DESC;
+
+  
+
+
+-- percentage of sales Category wise
+
+SELECT Category, CAST(SUM(Sales) AS DECIMAL(10,2)) AS Total_Sales, CAST(SUM(Sales) * 100 /
+                 (SELECT SUM(Sales) AS Expr1
+                 FROM    Sales_cleaned
+                 WHERE (MONTH(Order_Date) = 1)) AS DECIMAL(10,2)) AS PCT
+FROM   Sales_cleaned
+WHERE (MONTH(Order_Date) = 1)
+GROUP BY Category
+ORDER BY PCT DESC
+
+-- percentage of sales Segment wise
+SELECT Segment, CAST(SUM(Sales) AS DECIMAL(10,2)) AS Total_Sales, CAST(SUM(Sales) * 100 /
+                 (SELECT SUM(Sales) AS Expr1
+                 FROM    Sales_cleaned
+                 WHERE (DATEPART(QUARTER, Order_Date) = 1)) AS DECIMAL(10, 2)) AS PCT
+FROM   Sales_cleaned
+WHERE (DATEPART(QUARTER, Order_Date) = 1) -- Quarterwise
+GROUP BY Segment
+ORDER BY PCT DESC
+
+-- Best revenue sub-category
+SELECT TOP 5 Sub_Category , CAST(SUM(Sales) AS DECIMAL(10,2) ) AS Total_revenue FROM Sales_cleaned 
+GROUP BY Sub_Category
+ORDER BY Total_revenue DESC;
+
+--NON- profitable 
+
+SELECT TOP 5 Sub_Category , CAST(SUM(Sales) AS DECIMAL(10,2)) AS Total_revenue FROM Sales_cleaned 
+GROUP BY Sub_Category
+ORDER BY Total_revenue;
+
+
+SELECT TOP 5 Sub_Category , CAST(SUM(Sales) AS DECIMAL(10,2) ) AS Total_revenue FROM Sales_cleaned 
+GROUP BY Sub_Category
+ORDER BY Total_revenue DESC;
+
+--BEST seller product
+SELECT TOP 5 Product_Name , COUNT(DISTINCT Order_ID)  AS Total_Orders FROM Sales_cleaned 
+GROUP BY Product_Name
+ORDER BY Total_Orders DESC;
+
