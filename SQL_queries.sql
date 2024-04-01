@@ -139,6 +139,7 @@ ORDER BY Total_revenue DESC;
 
 --BEST seller product
 SELECT TOP 5 Product_Name , COUNT(DISTINCT Order_ID)  AS Total_Orders FROM Sales_cleaned 
+WHERE Sub_Category = 'Phones'
 GROUP BY Product_Name
 ORDER BY Total_Orders DESC;
 
