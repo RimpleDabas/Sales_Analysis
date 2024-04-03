@@ -1,2 +1,2 @@
-# Sales_Analysis
-Sales analysis using Python, Sql and PowerBI
+# Sales Analysis
+The ultimate goal of the 
