@@ -2,7 +2,7 @@
 The ultimate goal of this project is to create PowerBI dashboard.
 
 ## Steps 
-The first step involved was to extraxt and clean the datatset. This was doone using Python and SQL. Refer here for [cleaning](https://github.com/RimpleDabas/Sales_Analysis/blob/main/Sales_cleaning.ipynb) steps.Exploratory data analysis was done in Python to get some insights. For eg. Sunburst chart below shows the best performing regions yearwise .![](Images\Sunburst.png)
+The first step involved was to extraxt and clean the datatset. This was doone using Python and SQL. Refer here for [cleaning](https://github.com/RimpleDabas/Sales_Analysis/blob/main/Sales_cleaning.ipynb) steps.Exploratory data analysis was done in Python to get some insights. For eg. Sunburst chart below shows the best performing regions yearwise .![](Images/Sunburst.png)
 
 Database was created using MYSQL Server and queriws were fired to get few analytical points. These queries can be referred in this [file](https://github.com/RimpleDabas/Sales_Analysis/blob/main/SQL_queries.sql)
 
