@@ -19,7 +19,7 @@ Finally data was imported inot Power BI using SQL server import method and repor
 
 The .pbix [file](https://github.com/RimpleDabas/Sales_Analysis/blob/main/Sales_dashboard.pbix) is here for the refrence
 
-![](Images\Dashboard.png)
+![](Images/Dashboard.png)
 
 
 
