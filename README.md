@@ -14,14 +14,17 @@ Finally data was imported into **Power BI** using SQL server import method and r
 
 ![](Images/2.png)
  * **Pie** charts interactive buttons to visualize Top and bottom 5 sub-categories based on revenue
+
  ![](Images/3.png)
 
 * **Bar and Pie** charts interactive buttons to visualize Top and bottom 5 **sub-categories** based on the number of orders
 
 * Drill through the details based on the regions ,states ,segments and Sub categories
+
 ![](Images/5.png)
 
 * Tooltip visualization for the most common sub category sold based on the day
+
 ![](Images/4.png)
 * Filters based on the Years and States.
 
