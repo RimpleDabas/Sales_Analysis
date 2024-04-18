@@ -6,7 +6,7 @@ The first step involved was to extract and clean the datatset. This was doone us
 
 ![](Images/Sunburst.png)
 
-Database was created using **MYSQL Server** and queriws were fired to get few analytical points. These queries can be referred in this [file](https://github.com/RimpleDabas/Sales_Analysis/blob/main/SQL_queries.sql)
+Database was created using **MYSQL Server** and queries were fired to get few analytical points. These queries can be referred in this [file](https://github.com/RimpleDabas/Sales_Analysis/blob/main/SQL_queries.sql)
 
 Finally data was imported into **Power BI** using SQL server import method and report was dahboard was created using PowerBI Desktop and published to PowerBI service. Dashboard allows users to :
  *  Shift between two tabs **Home and Best/Worst** performances based on the revenue
