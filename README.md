@@ -38,7 +38,8 @@ Here are the few insights gained from the analysis
 * The most profitable region is the West region with maximum contribution to the sales is from Chairs sub category
 * In terms of month there is a steep rise in revenue during the period ranging from Oct to Dec
 * The best performing state in terms of revenue generation is California followed by New York and Texas with North Dakota being the worst 
-* Phoones sub category takes the lead in revenue but Binders are the one that are being sold the most.
+* Phones sub category takes the lead in revenue but Binders are the one that are being sold the most
+* Home supplies is the worst segment in terms of revenue generation.
 
 
 
