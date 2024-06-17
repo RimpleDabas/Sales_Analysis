@@ -1,5 +1,5 @@
 # Sales Analysis
-The ultimate goal of this project is to create PowerBI dashboard for sales across United States over the years 2015-2018.
+The goal of this project is to create PowerBI dashboard for retail sales across United States over the years 2015-2018.
 ## Tools and languages
 - Power BI
 - Dax
